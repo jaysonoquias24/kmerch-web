@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+#slider {
+	overflow: hidden;
+    height: 90%;
+    top:5%;
+}
+#slider figure {
+	position: relative;
+	width: 450%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 22.3%;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+@media (max-width: 1920px) { 
+    
+#slider {
+	overflow: hidden;
+    height: 90%;
+    top:5%;
+}
+#slider figure {
+	position: relative;
+	width: 450%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 22.22%;
+}
+marquee{
+        background-color: black;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        font-family: 'Great Vibes', cursive;
+        font-weight: bold;
+        font-size: 60px;
+        color: white;
+    }
+} 

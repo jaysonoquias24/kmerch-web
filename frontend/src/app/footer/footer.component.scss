@@ -1,0 +1,83 @@
+/*footer*/
+#mainFooter {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  height: 200px;
+}
+
+.faqs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope";
+}
+
+.info {
+  margin-top: 10px;
+  margin: 10px 110px;
+}
+
+.info p a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  float: left;
+}
+
+.info p a:hover {
+  text-decoration: underline;
+}
+
+.infot img {
+  display: inline-block;
+  width: 35px;
+  margin: 0px 5px;
+}
+.infot h1 {
+  font-size: 1.8em;
+}
+
+.infos img {
+  width: 180px;
+  margin: 0px 70px 0px 100px;
+}
+.info h1 {
+  font-size: 1.8em;
+  color: #fff;
+}
+
+.foot {
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 16px;
+}
+
+.subs {
+  margin-top: 15px;
+  font-size: 10px;
+  font-family: "Manrope";
+}
+
+input[type="email"] {
+  width: 257px;
+  padding: 7px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #000;
+  border: #fff 2px solid;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  margin-top: 10px;
+  width: 258px;
+  padding: 7px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #fff;
+  border-radius: 5px;
+}

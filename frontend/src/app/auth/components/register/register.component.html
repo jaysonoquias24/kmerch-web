@@ -1,0 +1,96 @@
+<body> 
+
+<div class="img-register">
+  <img src="../../../../assets/light-stick-bg.png" 
+   style="background-color:black; width:375px;">
+
+   <div class="img-logo">
+   <img src="../../../../assets/k-merch-logo.png" class="logo" >
+ </div>
+ </div>
+
+<div class="register-container">
+  <div class="form-container" style="border:1px solid black; background-color:black;">
+    <h2 style="color:white; padding:1px;">Create Account</h2>
+    <nz-alert
+      *ngIf="errorMessage"
+      nzShowIcon
+      nzType="error"
+      [nzMessage]="errorMessage"
+      [ngStyle]="{ 'margin-bottom': '16px' }"
+    ></nz-alert>
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit()">
+      <div class="input-container">
+        <label for="fullName" style="color:white;">Full name</label>
+        <input
+          nz-input
+          type="text"
+          name="fullName"
+          [(ngModel)]="fullName"
+          placeholder="Enter your full name"
+        />
+      </div>
+      <div class="input-container">
+        <label for="email" style="color:white;">Email Address</label>
+        <input
+          nz-input
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          placeholder="Enter your email address"
+        />
+      </div>
+      <div class="🤪">
+        <div class="input-container">
+          <label for="password" style="color:white;">Password</label>
+          <input
+            nz-input
+            type="password"
+            name="password"
+            [(ngModel)]="password"
+            placeholder="Enter a strong password"
+          />
+        </div>
+        <div class="input-container">
+          <label for="confirmPassword" style="color:white;">Confirm password</label>
+          <input
+            nz-input
+            type="password"
+            name="confirmPassword"
+            [(ngModel)]="confirmPassword"
+            placeholder="Repeat your password"
+          />
+        </div>
+      </div>
+      <div class="✅">
+        <div class="checkbox-container">
+          <input nz-input type="checkbox" />
+          <span style="color:white;">I agree to receive instructional and promotional emails</span>
+        </div>
+        <div class="checkbox-container">
+          <input nz-input type="checkbox" />
+          <span style="color:white;"> I agree to Eccom's Terms of Use & Privacy Policy</span>
+        </div>
+      </div>
+      <div class="cta-container">
+        <!-- <input type="submit" value="Sign up" /> -->
+        <button
+          nz-button
+          type="submit"
+          [disabled]="!canSubmit()"
+          [nzLoading]="loading"
+          style="background-color:#755998;
+          color:white; border-radius:40px; width:215px;"
+        >
+          Sign up
+        </button>
+       
+      </div>
+    </form>
+  </div>
+</div>
+<div class="loginbtn" style="text-align:center;">
+  <a routerLink="/login">Sign in </a></div>
+  <p class='login-txt' style='color:white;'>To keep connected with us <br>
+    log in with your personal info. </p>
+</body>

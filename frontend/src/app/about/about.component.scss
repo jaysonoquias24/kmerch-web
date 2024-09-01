@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Manrope&family=Playfair+Display&display=swap");
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Manrope";
+}
+
+.aboutUs {
+  margin: 0;
+  background-color: pink;
+  height: 470px;
+}
+
+#about-us-heading {
+  font-weight: bolder;
+  font-size: 52px;
+  padding-top: 65px;
+  margin-left: 110px;
+}
+
+#about-us-info {
+  font-size: 25px;
+  margin-left: 110px;
+}
+.ourTeam {
+  background-color: white;
+  text-align: center;
+}
+
+#our-team-heading {
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+#our-team-info {
+  font-size: 25px;
+  margin-left: 110px;
+  margin-right: 110px;
+  padding-bottom: 15px;
+}
+
+.pic{
+	  margin-left: 242px;
+	  float: right;	  
+}
+
+.team {
+  background-color: pink;
+  text-align: center;
+}
+
+#team-header {
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+.column {
+  float:center;
+  width: 15%;
+  padding-top: 20px;
+  position: relative;
+  margin-left: 60px;
+  text-align: center;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.text{
+  display: block;
+  margin-top: 10px;
+  font-family:times;
+  font-size: 60px;
+  color: #4F4F4F;
+  margin-left: 30%;
+}
