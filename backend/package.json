@@ -7,7 +7,7 @@
     "start": "SET NODE_ENV=production & nodemon app.js",
     "dev": "SET NODE_ENV=development & nodemon app.js"
   },
-  "author": "Michael Parkadze",
+  "author": "Slayable Group - BSIT",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
